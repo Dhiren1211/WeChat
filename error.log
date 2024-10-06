@@ -1,0 +1,13 @@
+Received file: Array
+(
+    [audioFile] => Array
+        (
+            [name] => recording_2024-02-25T15-34-12.mp3
+            [type] => audio/webm
+            [tmp_name] => C:\xampp\tmp\phpEF98.tmp
+            [error] => 0
+            [size] => 29535
+        )
+
+)
+Upload directory: audioFile/Upload file path: audioFile/recording_2024-02-25T15-34-12.mp3
