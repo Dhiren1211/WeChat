@@ -1,0 +1,37 @@
+Step by step switching/ Strowger switching:
+.Uni-Selector:
+ -The rotary motion of this switch is in one direction 
+  so it can moves only in a single direction.
+.Two motion Selector:
+ - The rotary motion of this switch can moves in two direction
+   Vertical as well as Horizontal 
+ - It has 10 levels and each level have 10 contacts thus total of 100 contacts are assemble.
+
+>>Multi Meter is a meter with multi function which can measure current, voltage, and resistance.
+
+>>Telecommunication helps in development of nation in various factor
+  - Good governance
+  - Business Sector
+  - Peson communication 
+
+>> Cross-bar Switching: It is a switching system where the cross points are arranged in a matric form and cross point are connected with two bars one horizontal and another is vertical and electromagnet helps in switching.
+
+>>Pliers are the mechanical tools which are used to gripping the items.
+
+>>Sky wave is the radio communication technology where radio frequency of 3MHz to 30MHz
+
+>> In the block diagram of telecommunication there are several components:
+ . Information source
+ . input transducer 
+ . transmitter 
+ . channel 
+ . noise 
+ . receiver
+ . output transducer 
+ . destination
+ . Original information
+>> Mechanical tools: Mechanical tools are the tools whic are used in telecommunication for make task essier and faster by the telecommunication technician 
+
+
+   
+

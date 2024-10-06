@@ -1,0 +1,57 @@
+
+
+Use DemoDW
+GO
+
+create table DimProduct
+(ProductKey int identity NOT NULL PRIMARY KEY NONCLUSTERED,
+ProductAltKey nvarchar(10) NOT NULL,
+ProductName nvarchar(50) NULL,
+ProductDescription nvarchar(100) NULL, 
+ProductCategoryName nvarchar(50))
+GO
+
+create table DimCustomer
+(CustomerKey int identity NOT NULL PRIMARY KEY NONCLUSTERED,
+CustomerAltKey nvarchar(10) NOT NULL,
+CustomerName nvarchar(50) NULL,
+CustomerEmail nvarchar(50) NULL,
+CustomerGeographyKey int NULL)
+GO
+
+create table DimSalesperson
+(SalespersonKey int identity NOT NULL PRIMARY KEY NONCLUSTERED,
+SalesPersonAltKey nvarchar(10) NOT NULL,
+SalespersonName nvarchar(50) NULL,
+StoreName nvarchar(50) NULL,
+StoreGeographyKey int NULL)
+
+create table DimDate
+(DateKey int NOT NULL PRIMARY KEY NONCLUSTERED,
+DateAltKey datetime NOT NULL,
+CalenderYear int NOT NULL,
+CalenderQuarter int NOT NULL,
+MonthOfYear int NOT NULL,
+[MonthName]nvarchar(15) NOT NULL,
+[DayOfMonth]int NOT NULL,
+[DayOfWeek]int NOT NULL,
+[DayName]nvarchar(15) NOT NULL,
+FiscalYear int NOT NULL,
+FiscalQuarter int NOT NULL)
+GO
+
+create table FactSalesOrders
+(ProductKey int NOT NULL REFERENCES DimProduct(ProductKey),
+CustomerKey int NOT NULL REFERENCES DimCustomer(CustomerKey),
+SalesPersonKey int NOT NULL REFERENCES DimSalesperson(SalespersonKey),
+OrderDateKey int NOT NULL REFERENCES DimDate(DateKey),
+OrderNo int NOT NULL,
+ItemNo int NOT NULL,
+Quantity int NOT NULL,
+SalesAmount money NOT NULL,
+Cost money NOT NULL,
+CONSTRAINT	[PK_FactSalesOrder] PRIMARY KEY NONCLUSTERED
+(
+[ProductKey],[CustomerKey],[SalesPersonKey],[OrderDateKey],[OrderNo],[ItemNo]
+)
+)
